@@ -1,0 +1,367 @@
+/*Font*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
+
+/*Reset*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Art-Gallery CSS*/
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+}
+.wrapper {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Top-nawigation*/
+nav {
+    width: 100%;
+    height: 10vh;
+    border-bottom: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-family: 'Inspiration', cursive;
+    color: #363945;
+    text-decoration: none;
+    font-size: 3rem;
+    margin-left: 0.5em;
+    text-shadow: 2px 2px 4px #1d1d1d;
+}
+.navigation {
+    width: 80%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.navigation li a {
+    color: #1d1d1d;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: .1em;
+    border-bottom: 3px solid transparent;
+}
+.navigation li a:hover {
+    border-bottom: 3px solid rgb(255, 61, 61);
+}
+
+/*Burger menu */
+.menu {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: none;
+}
+.line {
+    width: 3em;
+    height: .3em;
+    background-color: #000;
+    margin: .7em;
+    border-radius: 20px;
+    transition: .3s ease-in-out;
+}
+
+/*Home*/
+.home-container {
+    width: 100%;
+    height: 80vh;
+    background-image: url("../image/main-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-container header {
+    text-align: center;
+    color: #fff;
+    padding: 3em;
+    background-color: hsla(0, 0%, 0%, 0.6);
+    box-shadow: rgba(255, 255, 255, 0.365) 0px 3px 8px;
+    border-top: 1px solid rgba(255, 255, 255, 0.7);
+    border-left: 1px solid rgba(255, 255, 255, 0.7);
+
+}
+.home-container header h3 {
+    font-size: 2.5rem;
+    letter-spacing: .1em;
+}
+.home-container header h1 {
+    font-size: 2.8rem;
+    letter-spacing: .1em;
+    border-top: 1px solid #fff;
+}
+footer {
+    width: 100%;
+    height: 10vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p {
+    font-size: 1.2rem;
+    color: whitesmoke;
+    text-align: center;
+}
+/*About*/
+.main {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 1em;
+}
+.profile-card {
+    margin: 0 auto;
+    width: 95%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding-bottom: .5em;
+    align-self: flex-start;
+}
+.profile-card figure {
+    width: 100%;
+}
+.profile-card figure img {
+    width: 100%;
+    max-height: 600px;
+}
+.profile-card figcaption {
+    padding: .5em;
+    text-align: center;
+}
+.profile-card figcaption p {
+    margin: .5em 0;
+    color: gray;
+}
+.profile-card .social-media {
+    text-align: center;
+}
+.profile-card .social-media a {
+    margin-right: .8em;
+}
+.profile-text {
+    text-align: center;
+    margin-top: 2em;
+}
+.profile-text h1 {
+    font-size: 2.5rem;
+    padding: .2em;
+    border-bottom: 1px solid #1d1d1d;
+}
+.profile-text h3 {
+    font-size: 1.3rem;
+    padding: .5em;
+}
+.profile-text p {
+    text-align: justify;
+    padding: 0.5em;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: #363945;
+}
+.profile-text .cytat {
+    margin-top: 2em;
+    padding: 1em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.profile-text .cytat q {
+    font-weight: 500;
+}
+/*Gallery*/
+
+.art-card {
+    margin: .7em;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.art-card figure {
+    width: 100%;
+    height: 350px;
+}
+.art-card figure img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.art-card figure figcaption {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+.art-card .art-description {
+    width: 100%;
+    background-color: whitesmoke;
+    padding: .5em 0;
+}
+.art-card .art-description p {
+    margin: 0.5em;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.art-card .art-description p span {
+    font-weight: 400;
+    margin-left: .5em;
+}
+.btn {
+    background-color: #1d1d1d;
+    color: #fff;
+    font-weight: bolder;
+    border: none;
+    width: 100%;
+    padding: .5em;
+    font-size: 1.2em;
+}
+.btn:hover {
+    background-color: #313131
+}
+/*Contact*/
+.contact {
+    padding: 2em;
+}
+.contact h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+.contact h1>span {
+    background-color: #000;
+    color: #fff;
+    margin-left: .2em;
+}
+.phone-email{
+    margin-top: 2em;
+    font-size: 1.5rem;
+}
+ form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+ }
+input {
+    border: none;
+ }
+
+ input, textarea {
+    background-color: whitesmoke;
+    outline: none;
+    font-size: 2rem;
+    margin: .5em;
+    padding: .5em;
+ }
+ .btn-contact {
+    background-color: #000000;
+    font-size: 1.8rem;
+    color: #f7f7f7;
+    border: none;
+    width: 40%;
+    padding: 0.8em;
+    border-radius: 1em;
+    margin: 0 auto;
+    transition: .3s ease-in-out;
+ }
+ .btn-contact:hover {
+    background-color: #1d1d1dc0;
+ }
+
+/*Media Queries*/
+@media only screen and (max-width: 768px) {
+    .menu {
+        display: block;
+        transition: .3s ease-in-out;
+    }
+
+    .menu.active .line:first-child {
+        transform: translateY(-300px);
+    }
+
+    .menu.active .line:nth-child(2) {
+        transform: rotate(-405deg) translateY(8px);
+    }
+
+    .menu.active .line:nth-child(3) {
+        transform: rotate(-320deg) translateY(-10px);
+    }
+
+    .navigation {
+        position: absolute;
+        right: 0;
+        top: 10vh;
+        width: 100%;
+        background-color: #1d1d1d;
+        height: 90vh;
+        flex-direction: column;
+        text-align: center;
+        transform: translate(100%);
+        transition: .3s ease-in-out;
+    }
+
+    .navigation.active {
+        transform: translate(0%);
+    }
+
+    .navigation li a {
+        color: whitesmoke;
+        font-size: 2.5rem;
+
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /*home*/
+    .home-container {
+        background-image: url("../image/main-desktop.jpg");
+    }
+    .home-container header h3, .home-container header h1 {
+        font-size: 3.5rem;
+    }
+    /*about*/
+    .about {
+        display: flex;
+        justify-content: space-between;
+    }
+    .about .profile-card {
+        flex-basis: 30%;
+        
+    }
+    .about .profile-text {
+        margin-top: 1em;
+        flex-basis: 65%;
+    }
+    .about .profile-text h3 {
+        font-size: 1.6rem;
+    }
+    .about .profile-text p {
+        font-size: 1.4rem;
+    }
+    /*Gallery*/
+    .gallery-container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-flow: wrap;
+    }
+    .art-card {
+        width: 23%;
+    }
+    /*Contact*/
+    .contact-me {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

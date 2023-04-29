@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Michał Syc">
+    <meta name="description" content="Private art gallery"> 
+    <title>Art-Gallery</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fontello.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <a href="index.html" class="logo">Art.</a>
+                <ul class="navigation">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button class="menu">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </button>
+            </nav>
+        </header>
+        <main class="main">
+            <div class="gallery-container">
+                <div class="art-card">
+                    <figure>
+                        <img src="./image/gallery/img01.jpg" alt="img01">
+                    </figure>
+                    <div class="art-description">
+                        <p>Style:<span>Graphics</span></p>
+                        <p>Size:<span>44 x 59 cm</span></p>
+                        <p>Price:<span>100$</span></p>
+                    </div>
+                    <button class="btn">Buy</button>
+                </div>
+                <div class="art-card">
+                    <figure>
+                        <img src="./image/gallery/img02.jpg" alt="img01">
+                    </figure>
+                    <div class="art-description">
+                        <p>Style:<span>Graphics</span></p>
+                        <p>Size:<span>35 x 59 cm</span></p>
+                        <p>Price:<span>50$</span></p>
+                    </div>
+                    <button class="btn">Buy</button>
+                </div>
+                <div class="art-card">
+                    <figure>
+                        <img src="./image/gallery/img03.jpg" alt="img01">
+                    </figure>
+                    <div class="art-description">
+                        <p>Style:<span>Graphics</span></p>
+                        <p>Size:<span>64 x 89 cm</span></p>
+                        <p>Price:<span>65$</span></p>
+                    </div>
+                    <button class="btn">Buy</button>
+                </div>
+                <div class="art-card">
+                    <figure>
+                        <img src="./image/gallery/img04.jpg" alt="img01">
+                    </figure>
+                    <div class="art-description">
+                        <p>Style:<span>Graphics</span></p>
+                        <p>Size:<span>44 x 59 cm</span></p>
+                        <p>Price:<span>200$</span></p>
+                    </div>
+                    <button class="btn">Buy</button>
+                </div>
+                <div class="art-card">
+                    <figure>
+                        <img src="./image/gallery/img05.jpg" alt="img01">
+                    </figure>
+                    <div class="art-description">
+                        <p>Style:<span>Graphics</span></p>
+                        <p>Size:<span>144 x 259 cm</span></p>
+                        <p>Price:<span>300$</span></p>
+                    </div>
+                    <button class="btn">Buy</button>
+                </div>
+                <div class="art-card">
+                    <figure>
+                        <img src="./image/gallery/img06.jpg" alt="img01">
+                    </figure>
+                    <div class="art-description">
+                        <p>Style:<span>Graphics</span></p>
+                        <p>Size:<span>44 x 59 cm</span></p>
+                        <p>Price:<span>30$</span></p>
+                    </div>
+                    <button class="btn">Buy</button>
+                </div>
+                <div class="art-card">
+                    <figure>
+                        <img src="./image/gallery/img07.jpg" alt="img01">
+                    </figure>
+                    <div class="art-description">
+                        <p>Style:<span>Graphics</span></p>
+                        <p>Size:<span>84 x 59 cm</span></p>
+                        <p>Price:<span>150$</span></p>
+                    </div>
+                    <button class="btn">Buy</button>
+                </div>
+                <div class="art-card">
+                    <figure>
+                        <img src="./image/gallery/img08.jpg" alt="img01">
+                    </figure>
+                    <div class="art-description">
+                        <p>Style:<span>Graphics</span></p>
+                        <p>Size:<span>244 x 159 cm</span></p>
+                        <p>Price:<span>400$</span></p>
+                    </div>
+                    <button class="btn">Buy</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        
+        const mobileNav = document.querySelector('.navigation');
+        const menuIcon = document.querySelector('.menu');
+
+        menuIcon.addEventListener('click', function(){
+            mobileNav.classList.toggle('active');
+            menuIcon.classList.toggle('active');
+        })
+    </script>
+</body>
+</html>

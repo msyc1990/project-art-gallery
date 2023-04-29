@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Michał Syc">
+    <meta name="description" content="Private art gallery"> 
+    <title>Art-Gallery</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fontello.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <a href="index.html" class="logo">Art.</a>
+                <ul class="navigation">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button class="menu">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </button>
+            </nav>
+        </header>
+        <main class="main">
+            <section class="about">
+                <div class="profile-card">
+                    <figure>
+                        <img src="./image/profile-photo.jpg" alt="Profile-photo" class="profile">
+                    </figure>
+                    <figcaption>
+                        <h1>Francisco d`Anconia</h1>
+                        <p>Modern-Artist</p>
+                    </figcaption>
+                    <div class="social-media">
+                        <a href="#"><i class="icon-instagram"></i></a>
+                        <a href="#"><i class="icon-facebook-rect"></i></a>
+                    </div>
+                </div>
+                <article class="profile-text">
+                    <h1>About</h1>
+                    <h3>Welcome to my private art gallery!</h3>
+                    <p>
+                        I am very excited that you can visit me and admire my art collections that I have gathered over many years. My gallery consists of different types of artworks, from paintings to photographs and graphics.
+                    </p>
+                    <p>
+                        My collections reflect my interests and passions, as well as my personality. I invite you to wander through my gallery, learning the history behind each work of art and enjoying the beauty of art. I hope that your visit to my private art gallery will be inspiring and a wonderful experience for you.
+                    </p>
+                    <p class="cytat"><q>Art is born when the artist's secret vision intersects with the manifestation of nature in search of new forms.</q>-Khalil Gibran</p>
+                </article>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        
+        const mobileNav = document.querySelector('.navigation');
+        const menuIcon = document.querySelector('.menu');
+
+        menuIcon.addEventListener('click', function(){
+            mobileNav.classList.toggle('active');
+            menuIcon.classList.toggle('active');
+        })
+    </script>
+</body>
+</html>
